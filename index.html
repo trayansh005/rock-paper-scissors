@@ -6,8 +6,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rock, Paper and Scissors</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet" />
 	</head>
 	<body>
+		<div class="container">
+			<div class="scores">
+				<h2 class="player-score">Player: <span id="player-data">0</span></h2>
+				<h2 class="cpu-score">Computer: <span id="cpu-data">0</span></h2>
+			</div>
+
+			<div class="rps-images">
+				<img src="images/rock.png" alt="" class="player-rps-img" />
+				<img src="images/cpuRock.png" alt="" class="cpu-rps-img" />
+			</div>
+
+			<div class="buttons">
+				<button class="rock">Rock</button>
+				<button class="paper">Paper</button>
+				<button class="scissors">Scissors</button>
+			</div>
+		</div>
+
+		<div class="start-game">
+			<h1 class="winner"></h1>
+			<button class="start">Start Game</button>
+		</div>
+
 		<script src="script.js"></script>
 	</body>
 </html>
